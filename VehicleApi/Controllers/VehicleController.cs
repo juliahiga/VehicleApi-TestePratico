@@ -51,6 +51,13 @@ namespace VehicleApi.WebApi.Controllers
             return vehicle == null ? NotFound() : Ok(vehicle);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var vehicles = await _context.Vehicles.ToListAsync();
+            return Ok(vehicles);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
