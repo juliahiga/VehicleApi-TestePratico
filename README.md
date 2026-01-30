@@ -30,6 +30,19 @@ Acessar a pasta do repositório:
 cd VehicleApi-TestePratico
 ```
 
+### Executando o projeto:
+
+Na raiz do projeto, executar os seguintes comandos:
+```bash
+dotnet restore
+dotnet run
+```
+### Testando via Swagger:
+Com o projeto em execução, acesse:
+```bash
+http://localhost:5214/swagger
+```
+
 <h2 id="rotas">📍 Endpoints da API</h2>
 
 <kbd>POST /api/Vehicle</kbd>     | Cadastra um novo veículo [detalhes da requisição](#post-auth-detail)
